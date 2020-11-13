@@ -25,3 +25,4 @@ class TestController extends Controller
     		echo __METHOD__;
     	}
     }
+  }
