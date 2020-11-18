@@ -39,7 +39,7 @@ class TestController extends Controller
         $tmpStr = sha1( $tmpStr );
         
         if( $tmpStr == $signature ){
-            echo $_GET('echostr');
+            echo request()->get("echostr");
         }else{
             echo "111";
         }
