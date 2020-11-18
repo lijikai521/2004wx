@@ -19,6 +19,6 @@ Route::get('/info', function () {
     phpinfo();
 });
 
-Route::get('/test1','TestController@test1');
-Route::get('/test2','TestController@test2');  //测试2
-Route::get('/AccessToken','TestController@AccessToken');
+Route::any('/test1','TestController@test1');
+Route::any('/test2','TestController@test2');  //测试2
+Route::any('/AccessToken','TestController@AccessToken');
