@@ -32,7 +32,7 @@ class TestController extends Controller
         $signature = $_GET["signature"];
         $timestamp = $_GET["estamp"];
         $nonce = $_GET["nonce"];
-       $token = TOKEN;
+       $token = "TOKEN";
         $tmpArr = array($token, $timestamp, $nonce);
         sort($tmpArr, SORT_STRING);
         $tmpStr = implode( $tmpArr );
