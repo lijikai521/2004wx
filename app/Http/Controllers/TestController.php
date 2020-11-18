@@ -25,18 +25,14 @@ class TestController extends Controller
     		echo __METHOD__;
     	}
     }
-<<<<<<< HEAD
 
-=======
     
->>>>>>> 9e550ab577710115296b0e39958b17d744ae2127
     public function AccessToken()
     {
         $signature = $_GET["signature"];
-        $timestamp = $_GET["timestamp"];
+        $timestamp = $_GET["estamp"];
         $nonce = $_GET["nonce"];
-        
-        $token = TOKEN;
+       $token = TOKEN;
         $tmpArr = array($token, $timestamp, $nonce);
         sort($tmpArr, SORT_STRING);
         $tmpStr = implode( $tmpArr );
@@ -48,8 +44,5 @@ class TestController extends Controller
             echo "111";
         }
     }
-<<<<<<< HEAD
 }
-=======
-  }
->>>>>>> 9e550ab577710115296b0e39958b17d744ae2127
+  
