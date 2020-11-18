@@ -30,9 +30,9 @@ class TestController extends Controller
     public function AccessToken()
     {
         $signature = $_GET["signature"];
-        $timestamp = $_GET["estamp"];
+        $timestamp = $_GET["timestamp"];
         $nonce = $_GET["nonce"];
-       $token = "TOKEN";
+        $token ="TOKEN";
         $tmpArr = array($token, $timestamp, $nonce);
         sort($tmpArr, SORT_STRING);
         $tmpStr = implode( $tmpArr );
